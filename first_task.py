@@ -1,11 +1,11 @@
 import streamlit as st
-from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.output_parsers.rail_parser import GuardrailsOutputParser
 from langchain.chains.question_answering import load_qa_chain
 from langchain_community.chat_models import ChatOpenAI
+from PyPDF2 import PdfReader
 
 
 OPENAI_API_KEY = "sk-proj-pltVZeHsDKvmPG6lVhmrT3BlbkFJJFwrX2vwPGgPURQQDpDg" #Pass your key here
